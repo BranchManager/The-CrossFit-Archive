@@ -1,2 +1,0 @@
-gcc -c twofile.c
-gcc -c first_three.c

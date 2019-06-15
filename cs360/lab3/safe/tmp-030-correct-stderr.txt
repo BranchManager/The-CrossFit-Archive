@@ -1,4 +1,0 @@
-tf3.c:7:9: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘char’
- staticc char *fred = "I cannt splll thngs";
-         ^
-Command failed.  Exitting

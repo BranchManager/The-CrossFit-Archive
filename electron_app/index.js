@@ -37,8 +37,8 @@ const signin = document.getElementById('auth')
 
 
 signin.addEventListener('click', function(){
-    var e = document.getElementById('user').value;
-    var b = document.getElementById('passwrd').value;
+    var e = document.getElementById('usersignin').value;
+    var b = document.getElementById('passwordsignin').value;
 
     console.log(e)
     console.log(b)
@@ -48,13 +48,19 @@ signin.addEventListener('click', function(){
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
+      console.log('you have an error')
       console.log("error message")
       console.log(errorMessage)
       // ...
     })
-    .then((user)=>{console.log(user)});
+    .then((user)=>{
+      console.log(user)
+      //setupdatabase()
+    });
 
-    
+    //function setupdatabase(){
+      //console.log("setterup")
+    //}
     
 })
 document.addEventListener("DOMContentLoaded", event =>{

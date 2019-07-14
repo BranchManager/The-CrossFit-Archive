@@ -15,7 +15,8 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Style CSS -->
-    <link rel="stylesheet" href="css/core-style.css">
+    <!---link rel="stylesheet" href="css/core-style.css"-->
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
     
 
@@ -49,7 +50,7 @@
         <div class="mobile-nav">
             <!-- Navbar Brand -->
             <div class="amado-navbar-brand">
-                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                <a href="index.html"><img src="img/core-img/cfc_logo_1500px_2x.png" alt=""></a>
             </div>
             <!-- Navbar Toggler -->
             <div class="amado-navbar-toggler">
@@ -65,29 +66,30 @@
             </div>
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                <a href="index.html"><img src="img/core-img/cfc_logo_1500px_2x.png" alt=""></a>
             </div>
             <!-- Amado Nav -->
             <nav class="amado-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="shop.html">Shop</a></li>
-                    <li><a href="product-details.html">Product</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li class="active"><a href="shop.html">Log WOD</a></li>
+                    <li><a href="product-details.html">Hero WOD / Benchmarks</a></li>
+                    <li><a href="cart.html">Latest Workout</a></li>
+                    <li><a href="checkout.html">Wish WOD</a></li>
+                    <li><a href="checkout.html">View All</a></li>
                 </ul>
             </nav>
             <!-- Button Group -->
-            <div class="amado-btn-group mt-30 mb-100">
+            <!--div class="amado-btn-group mt-30 mb-100">
                 <a href="#" class="btn amado-btn mb-15">%Discount%</a>
                 <a href="#" class="btn amado-btn active">New this week</a>
-            </div>
+            </div-->
             <!-- Cart Menu -->
-            <div class="cart-fav-search mb-100">
+            <!--div class="cart-fav-search mb-100">
                 <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
                 <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
                 <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
-            </div>
+            </div-->
             <!-- Social Button -->
             <div class="social-info d-flex justify-content-between">
                 <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
@@ -103,7 +105,7 @@
             <!-- ##### Single Widget ##### -->
             <div class="widget catagory mb-50">
                 <!-- Widget Title -->
-                <h6 class="widget-title mb-30">Catagories</h6>
+                <h6 class="widget-title mb-30">WOD Type</h6>
 
                 <!--  Catagories  -->
                 <div class="catagories-menu">
@@ -120,38 +122,38 @@
             </div>
 
             <!-- ##### Single Widget ##### -->
-            <div class="widget brands mb-50">
-                <!-- Widget Title -->
+            <!-- <div class="widget brands mb-50">
+                
                 <h6 class="widget-title mb-30">Brands</h6>
 
                 <div class="widget-desc">
-                    <!-- Single Form Check -->
+                    
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="amado">
                         <label class="form-check-label" for="amado">Amado</label>
                     </div>
-                    <!-- Single Form Check -->
+                    
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="ikea">
                         <label class="form-check-label" for="ikea">Ikea</label>
                     </div>
-                    <!-- Single Form Check -->
+                    
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="furniture">
                         <label class="form-check-label" for="furniture">Furniture Inc</label>
                     </div>
-                    <!-- Single Form Check -->
+                   
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="factory">
                         <label class="form-check-label" for="factory">The factory</label>
                     </div>
-                    <!-- Single Form Check -->
+                    
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="artdeco">
                         <label class="form-check-label" for="artdeco">Artdeco</label>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ##### Single Widget ##### -->
             <div class="widget color mb-50">
@@ -198,33 +200,41 @@
                                     <div class="checkout_details_area mt-50 clearfix">
             
                                         <div class="cart-title">
-                                            <h2>Checkout</h2>
+                                            <h2>Log Workout (AMRAP)</h2>
                                         </div>
-            
+                                        <!--col-md-65 for 75% long-->
                                         <form action="#" method="post">
                                             <div id="uknow" class="row">
+                                                <div class="col-12 mb-3">
+                                                    <input type="text" class="form-control" id="last_name" value="" placeholder="WOD title" required>
+                                                </div>
                                                 <div class="col-md-65 mb-3">
-                                                    <input type="text" class="form-control" id="last_name" value="" placeholder="Movement" required>
+                                                    <input type="text" class="form-control" id="mvmt" value="" placeholder="Name of Movement" required>
                                                 </div>
                                                 <div class="col-md-6 mb-3">
-                                                    <input type="text" class="form-control" id="first_name" value="" placeholder="First Name" required>
+                                                    <input type="text" class="form-control" id="last_name" value="" placeholder="Reps" required>
                                                 </div>
-                                                <div class="col-md-6 mb-3">
-                                                    <input type="text" class="form-control" id="last_name" value="" placeholder="Last Name" required>
+                                                <div class="col-md-6 mb-3" id='weight'>
+                                                    <input type="text" class="form-control" id="" value="" placeholder="weight" required>
                                                 </div>
-                                                <div class="col-12 mb-3">
+                                                
+                                                
+                                                <!--div class="col-12 mb-3">
                                                     <input type="text" class="form-control" id="company" placeholder="Company Name" value="">
-                                                </div>
-                                                <div id="emc" class="col-12 mb-3">
+                                                </div-->
+                                                <!--div id="emc" class="col-12 mb-3">
                                                     <input type="email" class="form-control" id="email" placeholder="Email" value="">
-                                                </div>
-                                                <div class="col-12 mb-3">
+                                                </div-->
+                                                <!--div class="col-12 mb-3">
                                                         <button type="button" class="col-12 mb-3">here</button>
-                                                    </div>
-                                                <div class="col-12 mb-3">
-                                                    <a onclick="oof()"class="btn amado-btn w-100">Checkout</a>
+                                                    </div-->
+                                                <div id="addiv" class="col-md-65 mb-3">
+                                                    <a id="admvmt" onclick="Ad_movement()"class="btn amado-btn w-100">Add Movement</a>
                                                 </div>
-                                                <script>
+                                                <div id="addiv" class="col-md-65 mb-3">
+                                                    <a id="rmmvmt" onclick="rm_movement()"class="btn amado-btn w-100">Remove Last</a>
+                                                </div>
+                                                <!--script>
                                                     /*var x = '<div class="col-12 mb-3">';
                                                     var y = '<input type="email" class="form-control" id="email" placeholder="Email" value"">'
                                                     var z = '</div>'
@@ -232,23 +242,41 @@
                                                     for(i=0; i < 3; i++){
                                                         document.write(x+y+z)
                                                     }*/
+                                                </script-->
+                                                <div class="col-12 mb-3">
+                                                    <select class="nice-select w-100" id="country" >
+                                                    <option class="option" value="" disabled selected>Combine Wod</option>    
+                                                    <option class="option" value="Amrap">Amrap</option>
+                                                    <option class="option" value="EMOM">EMOM</option>
+                                                    <option class="option" value="RFT">RFT</option>
+                                                    <option class="option" value="Chipper">Chipper</option>
+                                                    <option class="option" value="Ladder">Ladder</option>
+                                                    <option class="option" value="Tabata">Tabata</option>
+                                                    <option class="option" value="ML">Max Lift</option>
+                                                    
+                                                    </select>
+                                                </div>
+                                                <script>
+                                                    var inputBox = document.getElementById('mvmt')
+                                                    var x = document.getElementById('weight')
+                                                    x.style.display = "none"
+                                                    inputBox.onkeyup = function(){
+                                                        
+                                                        if(inputBox.value == "snatch"){
+                                                            if (x.style.display == "none") {
+                                                                x.style.display = "block";
+                                                            } 
+                                                        }else{
+                                                            x.style.display = "none"
+                                                        }
+                                                        //document.getElementById('printchatbox').innerHTML = inputBox.value;
+                                                    }
                                                 </script>
-                                                <div class="col-md-65 mb-3">
-                                                    <select class="w-100" id="country" onchange="dostuff()">
-                                                    <option value="usa">United States</option>
-                                                    <option value="uk">United Kingdom</option>
-                                                    <option value="ger">Germany</option>
-                                                    <option value="fra">France</option>
-                                                    <option value="ind">India</option>
-                                                    <option value="aus">Australia</option>
-                                                    <option value="bra">Brazil</option>
-                                                    <option value="cana">Canada</option>
-                                                </select>
             
                                                 <script>
-                                                    function dostuff(){
-                                                        var em = document.getElementById("emc") //The element to insert before
-                                                        var parent = document.getElementById("emc").parentNode
+                                                    function Ad_movement(){
+                                                        var em = document.getElementById("addiv") //The element to insert before
+                                                        var parent = document.getElementById("addiv").parentNode
                                                             //.parent node gets parent of current element so
                                                             //in this case parent of document
                                                         var newdiv = document.createElement("div")
@@ -256,14 +284,31 @@
                                                         //var divpar = newInput.parentNode
                                                         newInput.type = "text" //add type class and id to the input elemetn
                                                         newInput.className = "form-control"
-                                                        newInput.id = "bob"
+                                                        newInput.id = "addme"
+
+                                                        newdiv.id = 'newdiv1'
                                                         //add classes tot he div element    
-                                                        newdiv.classList.add("col-md-6","mb-3")
-                                                        //insert in parent node before em
+                                                        newdiv.classList.add("col-md-65","mb-3")
+                                                        //insert in parent node (i.e. parent.insertBefore()) before em
                                                         parent.insertBefore(newdiv,em)
                                                         //insert element as child of the newdiv
                                                         newdiv.appendChild(newInput)
                                                         //parent.insertBefore(newInput,em)
+
+
+                                                        /////////////////////////**************************////////////////////////
+                                                        var newdivWeight = document.createElement('div')
+                                                        var newWeight = document.createElement('input')
+
+                                                        newWeight.type = "text" //add type class and id to the input elemetn
+                                                        newWeight.className = "form-control"
+                                                        newWeight.id = "addme2"
+                                                        
+                                                        newdivWeight.id = 'newdiv2'
+                                                        newdivWeight.classList.add('col-md-6','mb-3')
+
+                                                        parent.insertBefore(newdivWeight,em)
+                                                        newdivWeight.appendChild(newWeight)
             
                                                         console.log(parent)
                                                        // divpar.insertBefore(newdiv,newInput)
@@ -275,32 +320,44 @@
                                                     
                                                     
                                                     }
+                                                    function rm_movement(){
+                                                        console.log('removing')
+                                                        var ele = document.getElementById('addme2');
+                                                        var ele2 = document.getElementById('addme');
+                                                        var ele3 = document.getElementById('newdiv1');
+                                                        var ele4 = document.getElementById('newdiv2');
+
+                                                        ele.parentNode.removeChild(ele);
+                                                        ele2.parentNode.removeChild(ele2);
+                                                        ele3.parentNode.removeChild(ele3);
+                                                        ele4.parentNode.removeChild(ele4);
+                                                    }
                                                 </script>
-                                                </div>
-                                                <div class="col-12 mb-3">
+                                                <!--/div-->
+                                                <!--div class="col-12 mb-3">
                                                     <input type="text" class="form-control mb-3" id="street_address" placeholder="Address" value="">
-                                                </div>
-                                                <div class="col-12 mb-3">
+                                                </div-->
+                                                <!--div class="col-12 mb-3">
                                                     <input type="text" class="form-control" id="city" placeholder="Town" value="">
-                                                </div>
-                                                <div class="col-md-6 mb-3">
+                                                </div-->
+                                                <!--div class="col-md-6 mb-3">
                                                     <input type="text" class="form-control" id="zipCode" placeholder="Zip Code" value="">
-                                                </div>
-                                                <div class="col-md-6 mb-3">
+                                                </div-->
+                                                <!--div class="col-md-6 mb-3">
                                                     <input type="number" class="form-control" id="phone_number" min="0" placeholder="Phone No" value="">
-                                                </div>
+                                                </div-->
                                                 <div class="col-12 mb-3">
-                                                    <textarea name="comment" class="form-control w-100" id="comment" cols="30" rows="10" placeholder="Leave a comment about your order"></textarea>
+                                                    <textarea name="comment" class="form-control w-100" id="comment" cols="30" rows="10" placeholder="WOD Notes"></textarea>
                                                 </div>
             
                                                 <div class="col-12">
                                                     <div class="custom-control custom-checkbox d-block mb-2">
                                                         <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                        <label class="custom-control-label" for="customCheck2">Create an accout</label>
+                                                        <label class="custom-control-label" for="customCheck2">RX</label>
                                                     </div>
                                                     <div class="custom-control custom-checkbox d-block">
                                                         <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                                        <label class="custom-control-label" for="customCheck3">Ship to a different address</label>
+                                                        <label class="custom-control-label" for="customCheck3">Scaled</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -316,7 +373,8 @@
                                         padding: 30px;
                                         color: #6b6b6b;
                                         font-size: 14px;"
-                                        class=" mt-50 w-100" id="comment" cols="30" rows="10" placeholder="Leave a comment about your order"></textarea>
+                                        class=" mt-50 w-100" id="comment" cols="30" rows="10" 
+                                        placeholder="Log Full wod without inputting different section (Note logging this way WILL NOT be able to give user feed back"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -403,6 +461,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
     <!-- ##### Footer Area End ##### -->
 
+    <script>if (typeof module === 'object'){window.module = module; module = undefined;} </script>
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->

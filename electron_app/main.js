@@ -15,7 +15,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  win.loadFile('checkout.html')
+  win.loadFile('shop.html')
 
   // Open the DevTools.
   win.webContents.openDevTools()

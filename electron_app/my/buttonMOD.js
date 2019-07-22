@@ -46,7 +46,7 @@ Ad_movement = function(){
 }
  rm_movement = function(){
     console.log('removing')
-    /*var ele = document.getElementById('addme2');
+    var ele = document.getElementById('addme2');
     var ele2 = document.getElementById('addme');
     var ele3 = document.getElementById('newdiv1');
     var ele4 = document.getElementById('newdiv2');
@@ -54,7 +54,7 @@ Ad_movement = function(){
     ele.parentNode.removeChild(ele);
     ele2.parentNode.removeChild(ele2);
     ele3.parentNode.removeChild(ele3);
-    ele4.parentNode.removeChild(ele4);*/
+    ele4.parentNode.removeChild(ele4);
 }
 
 module.exports = {

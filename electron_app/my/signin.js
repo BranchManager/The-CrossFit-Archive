@@ -41,8 +41,6 @@ hello()
 
 
 
-
-
 ///////////////////////////
 firebase.auth().onAuthStateChanged(user =>{
     if(user){
@@ -88,5 +86,5 @@ signin.addEventListener('click', function(){
         }
     })
 
-const signin = document.getElementById('signin')
+//const signin = document.getElementById('signin')
 })
